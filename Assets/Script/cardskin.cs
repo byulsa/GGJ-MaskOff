@@ -59,7 +59,7 @@ public class cardskin : MonoBehaviour
         }
         else
         {
-            BackHair.SetActive(true);
+            BackHair.SetActive(false);
         }
         
     }
