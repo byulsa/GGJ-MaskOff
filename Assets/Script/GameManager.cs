@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log($"코인: {Coin}, 음식: {Food}");
+        // Debug.Log($"코인: {Coin}, 음식: {Food}");
 
         if (currentPhase == Phase.Execution)
         {
@@ -107,6 +107,7 @@ public class GameManager : MonoBehaviour
         {
             for (int j = 0; j < 3; j++)
             {
+                if(cards[i, j] == null) continue;
                 cards[i, j].UpdateCard(cards[x, y]);
             }
         }
@@ -135,7 +136,18 @@ public class GameManager : MonoBehaviour
                 PlaceCard(); // IsSelect = false, SelectCard = null 처리
 
                 Debug.Log($"보드 {slot.x}, {slot.y}에 배치 완료");
+                
             }
+            else
+            {
+                
+            }
+        }
+        if (hit.collider != null && hit.collider.CompareTag("Slot"))
+        {
+            Place slot = hit.collider.GetComponent<Place>();
+            RunCard(slot.x, slot.y);
+            Debug.Log("asdf");
         }
     }
 

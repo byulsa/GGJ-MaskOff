@@ -1842,6 +1842,7 @@ MonoBehaviour:
   - {fileID: 1508989905}
   Coin: 9999
   Food: 9999
+  currentPhase: 0
 --- !u!4 &1055318481
 Transform:
   m_ObjectHideFlags: 0
@@ -2758,7 +2759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa20185c321c494abfcd3334100bc1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shop
-  CardPrefab: {fileID: 7532726912818284000, guid: a3845e2cbf986a54899650444506f68d, type: 3}
+  CardPrefab: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
   SalesCard: []
   SpawnPoints:
   - {fileID: 391522907}
