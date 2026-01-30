@@ -43,17 +43,21 @@ public class Shop : MonoBehaviour
         
         int index = SalesCard.IndexOf(cardObj);
         if (index == -1) return;
-        Debug.Log("구매1");
         if (soldPanel[index].activeSelf) return;
-        Debug.Log("구매2");
-
+        Card card = cardObj.GetComponent<Card>();
         cardskin skin = cardObj.GetComponent<cardskin>();
 
         if (skin.maskWear == MaskWear.Wear)
         {
-            Debug.Log("마스크 쓴 캐릭터 구매");
+            GameManager.gameManager.Food -= card.cost;
         }
-
+        else
+        {
+            GameManager.gameManager.Coin -= card.cost;
+        }
+        cardObj.transform.position = new Vector3(0, -10, 0);
+        card.Select();
+        //card.enabled = true;
         soldPanel[index].SetActive(true);
     }
 
@@ -68,17 +72,20 @@ public class Shop : MonoBehaviour
         {
             GameObject newCard = Instantiate(CardPrefab, SpawnPoints[i].position, Quaternion.identity);
             cardskin skin = newCard.GetComponent<cardskin>();
+            
+            SalesCard.Add(newCard);
+
+            soldPanel[i].SetActive(false);
             if (skin.maskWear == MaskWear.Wear)
             {
+                Debug.Log("마스크");
                 SoldIcon[i].sprite = coinWear;
             }
             else
             {
+                Debug.Log("마스크 아님");
                 SoldIcon[i].sprite = coinNormal;
             }
-            SalesCard.Add(newCard);
-
-            soldPanel[i].SetActive(false);
         }
 
         IsStore = false;
