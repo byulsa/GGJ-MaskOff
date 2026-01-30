@@ -1,18 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Card : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public int cost;
+    public int x;
+    public int y;
+
+    public List<IAct> acts = new List<IAct>();
+    private readonly List<Type> actTypes = new List<Type>
     {
-        
+        typeof(TargetAmount),
+        typeof(CountAdjacentCard),
+        typeof(LinkFood),
+        typeof(LinkCoin),
+        typeof(EarnFood),
+        typeof(EarnCoin)
+    };
+
+    private void Awake()
+    {
+        acts = GetComponents<IAct>().OrderBy(a => actTypes.IndexOf(a.GetType())).ToList();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Run()
     {
-        
+        if (cost <= 0)
+        {
+            return;
+        }
+
+        foreach (var act in acts)
+        {
+            act.Run(this);
+        }
     }
+
+    public void UpdateCard(Card changedCard)
+    {
+        foreach (var act in acts)
+        {
+            act.UpdateCard(changedCard);
+        }
+    }
+
     public void Select()
     {
         Debug.Log($"선택됨{gameObject}");
