@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1221249450869478883}
   - component: {fileID: 3770391225921722183}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1155785050970524174}
   - component: {fileID: 4707969524335891615}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bady
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5595431384621255021}
   - component: {fileID: 2306095992298133110}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5817797247999895731}
   - component: {fileID: 6252030616797316928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1008789092761541701}
   - component: {fileID: 5454605234108452988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5700312956351908158}
   - component: {fileID: 2072971851426597820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3517384132646848758}
   - component: {fileID: 8766065995859413768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: port
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,9 +642,10 @@ GameObject:
   - component: {fileID: 8891033878118000317}
   - component: {fileID: 2115811476982095567}
   - component: {fileID: 7932483212626114118}
-  m_Layer: 0
+  - component: {fileID: 7425746171512826565}
+  m_Layer: 6
   m_Name: card
-  m_TagString: Untagged
+  m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -794,6 +795,52 @@ MonoBehaviour:
   - {fileID: -6103096709362124720, guid: f74a11ad109dfb942abb16fa45e0ad2f, type: 3}
   - {fileID: 2940831590262857249, guid: f74a11ad109dfb942abb16fa45e0ad2f, type: 3}
   - {fileID: 7314122582464894833, guid: f74a11ad109dfb942abb16fa45e0ad2f, type: 3}
+--- !u!61 &7425746171512826565
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532726912818284000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 1.2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.8, y: 1.2}
+  m_EdgeRadius: 0
 --- !u!1 &7932521613991821509
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,7 +851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1067551761485503938}
   - component: {fileID: 263655211458676956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: clothes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -894,7 +941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7641155514112345528}
   - component: {fileID: 5317464614458231619}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
