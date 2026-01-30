@@ -24,8 +24,18 @@ public class cardskin : MonoBehaviour
     public List<Sprite> MaskList;
     public List<Sprite> HairList;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
+        if(Random.Range(0, 2) == 1)
+        {
+            maskWear = MaskWear.Wear;
+            Mask.sprite = MaskList[Random.Range(0, MaskList.Count)];
+        }
+        else
+        {
+            maskWear = MaskWear.None;
+            Mask.sprite = null;
+        }
         Ran();
     }
 
@@ -49,17 +59,8 @@ public class cardskin : MonoBehaviour
         }
         else
         {
-            BackHair.SetActive(false);
+            BackHair.SetActive(true);
         }
-        if(Random.Range(0, 2) == 1)
-        {
-            maskWear = MaskWear.Wear;
-            Mask.sprite = MaskList[Random.Range(0, MaskList.Count)];
-        }
-        else
-        {
-            maskWear = MaskWear.None;
-            Mask.sprite = null;
-        }
+        
     }
 }
