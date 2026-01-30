@@ -1,28 +1,22 @@
 fileFormatVersion: 2
-guid: 96146f3090937e14b818bfe02ec36b33
+guid: 526381845000d7945a5e825f337180eb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7104653133866990232
-    second: FaceSheet_0
+      213: 2015757331277456085
+    second: Eyesheet)_0
   - first:
-      213: -2517195831628879061
-    second: FaceSheet_1
+      213: -7517233417376069086
+    second: Eyesheet)_1
   - first:
-      213: -839814646631479578
-    second: FaceSheet_2
+      213: -1651052532970035494
+    second: Eyesheet)_2
   - first:
-      213: 8609931413824535480
-    second: FaceSheet_3
+      213: -7828352094217353483
+    second: Eyesheet)_3
   - first:
-      213: -2232999317935964130
-    second: FaceSheet_4
-  - first:
-      213: 6012099333991230607
-    second: FaceSheet_5
-  - first:
-      213: -5658160316877397077
-    second: FaceSheet_6
+      213: -7758941277263640075
+    second: Eyesheet)_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FaceSheet_0
+      name: Eyesheet)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +127,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89af188126cc89260800000000000000
-      internalID: 7104653133866990232
+      spriteID: 5d2ae24ec9869fb10800000000000000
+      internalID: 2015757331277456085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FaceSheet_1
+      name: Eyesheet)_1
       rect:
         serializedVersion: 2
         x: 32
@@ -155,14 +149,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2baaa15abf111dd0800000000000000
-      internalID: -2517195831628879061
+      spriteID: 22a8a9fe80c6da790800000000000000
+      internalID: -7517233417376069086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FaceSheet_2
+      name: Eyesheet)_2
       rect:
         serializedVersion: 2
         x: 64
@@ -177,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e64c5647016854f0800000000000000
-      internalID: -839814646631479578
+      spriteID: ad6efca08784619e0800000000000000
+      internalID: -1651052532970035494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FaceSheet_3
+      name: Eyesheet)_3
       rect:
         serializedVersion: 2
         x: 96
@@ -199,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bbfc75e00f9c7770800000000000000
-      internalID: 8609931413824535480
+      spriteID: 5f64d772f3b1c5390800000000000000
+      internalID: -7828352094217353483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FaceSheet_4
+      name: Eyesheet)_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e10ccb683fac201e0800000000000000
-      internalID: -2232999317935964130
+      spriteID: 5f9c5975404b25490800000000000000
+      internalID: -7758941277263640075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FaceSheet_5
+      name: Eyesheet)_5
       rect:
         serializedVersion: 2
         x: 160
@@ -241,16 +235,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f8ce8e4ad744f6350800000000000000
-      internalID: 6012099333991230607
+      spriteID: 4f345318d136349469d527c9ada7f112
+      internalID: -275100211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FaceSheet_6
+      name: Eyesheet)_6
       rect:
         serializedVersion: 2
         x: 192
@@ -263,10 +257,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ba3af468b2d2a71b0800000000000000
-      internalID: -5658160316877397077
+      spriteID: d7cf5594c51994b43b8a238cd3ee0edf
+      internalID: -939389065
       vertices: []
       indices: 
       edges: []
@@ -275,7 +269,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 290979e50b15c23448ac0f2a02eff77b
+    spriteID: 59ad5da5ad0c05c43bea0fe1f18ea4c5
     internalID: 0
     vertices: []
     indices: 
@@ -287,13 +281,13 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      FaceSheet_0: 7104653133866990232
-      FaceSheet_1: -2517195831628879061
-      FaceSheet_2: -839814646631479578
-      FaceSheet_3: 8609931413824535480
-      FaceSheet_4: -2232999317935964130
-      FaceSheet_5: 6012099333991230607
-      FaceSheet_6: -5658160316877397077
+      Eyesheet)_0: 2015757331277456085
+      Eyesheet)_1: -7517233417376069086
+      Eyesheet)_2: -1651052532970035494
+      Eyesheet)_3: -7828352094217353483
+      Eyesheet)_4: -7758941277263640075
+      Eyesheet)_5: -275100211
+      Eyesheet)_6: -939389065
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

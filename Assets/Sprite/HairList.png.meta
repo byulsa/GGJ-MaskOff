@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: c0d3a5c0d37fe004180b41a707fd0c38
+guid: f74a11ad109dfb942abb16fa45e0ad2f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2087626826370961547
-    second: EyesSheet)_0
+      213: -2203082191793137569
+    second: HairList_0
   - first:
-      213: 3851894847495930164
-    second: EyesSheet)_1
+      213: 6462555588726498417
+    second: HairList_1
+  - first:
+      213: -6103096709362124720
+    second: HairList_2
+  - first:
+      213: 2940831590262857249
+    second: HairList_3
+  - first:
+      213: 7314122582464894833
+    second: HairList_4
+  - first:
+      213: 2447354333051482782
+    second: HairList_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EyesSheet)_0
+      name: HairList_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b80da61b98db8fc10800000000000000
-      internalID: 2087626826370961547
+      spriteID: f585e234b641d61e0800000000000000
+      internalID: -2203082191793137569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EyesSheet)_1
+      name: HairList_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,30 +152,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4310721a4fda47530800000000000000
-      internalID: 3851894847495930164
+      spriteID: 174224f511c9fa950800000000000000
+      internalID: 6462555588726498417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EyesSheet)_2
+      name: HairList_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e7e33a258700888409de59cad7d795db
-      internalID: -1594440349
+      spriteID: 0587d90e0e17d4ba0800000000000000
+      internalID: -6103096709362124720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HairList_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e5dd900ceefc820800000000000000
+      internalID: 2940831590262857249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HairList_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1779b73acbbf08560800000000000000
+      internalID: 7314122582464894833
       vertices: []
       indices: 
       edges: []
@@ -172,7 +228,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9d566e23736498b48aaee83083232d64
+    spriteID: 26bfef05b9bb75c4295939eb9d365a5d
     internalID: 0
     vertices: []
     indices: 
@@ -182,11 +238,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      EyesSheet)_0: 2087626826370961547
-      EyesSheet)_1: 3851894847495930164
-      EyesSheet)_2: -1594440349
+      HairList_0: -2203082191793137569
+      HairList_1: 6462555588726498417
+      HairList_2: -6103096709362124720
+      HairList_3: 2940831590262857249
+      HairList_4: 7314122582464894833
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

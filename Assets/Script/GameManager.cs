@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -5,6 +6,9 @@ public class GameManager : MonoBehaviour
     public static GameManager gameManager;
     public bool IsSelect = false;
     public GameObject SelectCard;
+    [Header("자원")]
+    public int Coin;
+    public int Food;
     void Awake()
     {
         gameManager = this;
