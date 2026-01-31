@@ -1,12 +1,12 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
+
 public enum MaskWear
 {
     None,
     Wear
 }
+
 public class cardskin : MonoBehaviour
 {
     public MaskWear maskWear = MaskWear.None;
