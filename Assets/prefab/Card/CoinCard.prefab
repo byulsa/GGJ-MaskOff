@@ -644,9 +644,8 @@ GameObject:
   - component: {fileID: 7932483212626114118}
   - component: {fileID: 7425746171512826565}
   - component: {fileID: 6614977621847553779}
-  - component: {fileID: 8354584327321094865}
   m_Layer: 6
-  m_Name: card 2
+  m_Name: CoinCard
   m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,7 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb768318713ef341a990e8b67e37831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Card
-  cost: 0
+  cost: 5
   x: 0
   y: 0
   coin: 100
@@ -861,19 +860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682206d3d5486c442a5edf4cb51971ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EarnCoin
-  amount: 0
---- !u!114 &8354584327321094865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7532726912818284000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcf2a208ad34c314680bebafa2eaddc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EarnFood
   amount: 1
 --- !u!1 &7932521613991821509
 GameObject:

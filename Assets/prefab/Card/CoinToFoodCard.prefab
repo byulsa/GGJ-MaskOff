@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 76795309
   m_SortingLayer: 1
   m_SortingOrder: 10
-  m_Sprite: {fileID: 2638745874003988891, guid: bd5a2cf60f8d09b4abca52e8f9f036b7, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &681151569064149609
@@ -643,8 +643,10 @@ GameObject:
   - component: {fileID: 2115811476982095567}
   - component: {fileID: 7932483212626114118}
   - component: {fileID: 7425746171512826565}
+  - component: {fileID: 8433303174881144877}
+  - component: {fileID: 6368259463015411489}
   m_Layer: 6
-  m_Name: card
+  m_Name: CoinToFoodCard
   m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -744,11 +746,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb768318713ef341a990e8b67e37831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Card
-  cost: 0
+  cost: 1
   x: 0
   y: 0
-  coin: 100
-  food: 100
+  coin: 500
+  food: 500
   place: {fileID: 0}
 --- !u!114 &7932483212626114118
 MonoBehaviour:
@@ -847,6 +849,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8, y: 1.2}
   m_EdgeRadius: 0
+--- !u!114 &8433303174881144877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532726912818284000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f17b41e9bfb6724b9c19fd08b75e74b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LessCoin
+  amount: 1
+--- !u!114 &6368259463015411489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532726912818284000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf2a208ad34c314680bebafa2eaddc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EarnFood
+  amount: 2
 --- !u!1 &7932521613991821509
 GameObject:
   m_ObjectHideFlags: 0

@@ -60,6 +60,15 @@ public class Card : MonoBehaviour
         GameManager.gameManager.AddRunActionToQueue(Run);
     }
 
+    public void DisableCollider()
+    {
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider != null)
+        {
+            collider.enabled = false;
+        }
+    }
+
     public void Select()
     {
         if (place == null)

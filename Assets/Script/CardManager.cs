@@ -111,6 +111,11 @@ public class CardManager : MonoBehaviour
         card.y = y;
         card.place = place;
 
+        card.coin = 0;
+        card.food = 0;
+
+        card.DisableCollider();
+
         cards[x, y] = card;
     }
 

@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     public Phase currentPhase = Phase.PlayerTurn;
     public List<Action> runQueue = new List<Action>();
     private float nextActionTime = 0f;
+
+    // TODO : add game
     
     void Awake()
     {

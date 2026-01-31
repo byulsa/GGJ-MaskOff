@@ -643,10 +643,11 @@ GameObject:
   - component: {fileID: 2115811476982095567}
   - component: {fileID: 7932483212626114118}
   - component: {fileID: 7425746171512826565}
-  - component: {fileID: 6614977621847553779}
-  - component: {fileID: 6368259463015411489}
+  - component: {fileID: 6895908265164968153}
+  - component: {fileID: -7463800163849616969}
+  - component: {fileID: 3595450250243728760}
   m_Layer: 6
-  m_Name: card 4
+  m_Name: AdjacentCoinCard
   m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,11 +747,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bb768318713ef341a990e8b67e37831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Card
-  cost: 1
+  cost: 2
   x: 0
   y: 0
-  coin: 500
-  food: 500
+  coin: 100
+  food: 100
   place: {fileID: 0}
 --- !u!114 &7932483212626114118
 MonoBehaviour:
@@ -849,7 +850,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8, y: 1.2}
   m_EdgeRadius: 0
---- !u!114 &6614977621847553779
+--- !u!114 &6895908265164968153
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -858,11 +859,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7532726912818284000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 682206d3d5486c442a5edf4cb51971ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 5102cea65431d264c9d1b1721cd1f04b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EarnCoin
+  m_EditorClassIdentifier: Assembly-CSharp::TargetAmount
   amount: 0
---- !u!114 &6368259463015411489
+--- !u!114 &-7463800163849616969
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -871,10 +872,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 7532726912818284000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcf2a208ad34c314680bebafa2eaddc6, type: 3}
+  m_Script: {fileID: 11500000, guid: 63b7f8b1803107f4c84832ca70acb2eb, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EarnFood
-  amount: 3
+  m_EditorClassIdentifier: Assembly-CSharp::CountAdjacentCard
+  targetAmount: {fileID: 6895908265164968153}
+--- !u!114 &3595450250243728760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532726912818284000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f799f52b558024e48ae27365393e02a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LinkCoin
+  targetAmount: {fileID: 6895908265164968153}
 --- !u!1 &7932521613991821509
 GameObject:
   m_ObjectHideFlags: 0
