@@ -32,25 +32,31 @@ public class InputManager : MonoBehaviour
 
         if (hit.collider != null)
         {
+            GameObject cardObject = hit.collider.gameObject;
+
             if (hit.collider.CompareTag("Card"))
             {
-                GameObject cardObject = hit.collider.gameObject;
                 if (shop.IsShopCard(cardObject))
                 {
                     shop.BuyCard(cardObject);
                 }
                 else
                 {
-                    // This handles selecting cards on the board or in hand (if they have colliders)
-                    cardObject.GetComponent<Card>().Select();
+                    CardManager.cardManager.SelectingCard(cardObject);
                 }
             }
             else if (hit.collider.CompareTag("Slot"))
             {
+                Place place = hit.collider.GetComponent<Place>();
+
                 if (CardManager.cardManager.IsSelect)
                 {
-                    Place place = hit.collider.GetComponent<Place>();
                     CardManager.cardManager.TryPlaceCardOnSlot(place);
+                }
+                else
+                {
+                    Debug.Log($"실행됨{gameObject}");
+                    CardManager.cardManager.RunCard(place.x, place.y);
                 }
             }
             else

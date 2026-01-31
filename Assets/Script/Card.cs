@@ -68,9 +68,6 @@ public class Card : MonoBehaviour
             CardManager.cardManager.SelectingCard(gameObject);
             return;
         }
-
-        Debug.Log($"실행됨{gameObject}");
-        CardManager.cardManager.RunCard(place.x, place.y);
     }
 
     public void AddAct(IAct newAct)

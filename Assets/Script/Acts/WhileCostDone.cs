@@ -6,7 +6,7 @@ public class WhileCostDone : MonoBehaviour, IAct
     {
         if (card.cost > 0)
         {
-            card.Run();
+            GameManager.gameManager.AddRunActionToQueue(card.Run);
         }
     }
 

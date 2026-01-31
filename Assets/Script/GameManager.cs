@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
     
     public void AddRunActionToQueue(Action action)
     {
+        Debug.Log("Action added to run queue");
         runQueue.Add(action);
     }
 

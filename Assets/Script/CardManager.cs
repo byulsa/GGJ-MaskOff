@@ -40,13 +40,19 @@ public class CardManager : MonoBehaviour
     {
         for (int i = 0; i < handCards.Count; i++)
         {
-            if (SelectCard != null && handCards[i].gameObject == SelectCard)
+            if (SelectCard != null)
             {
                 continue;
             }
 
             float xPos = i * 2.5f - (handCards.Count - 1) * 1.25f;
             Vector3 targetPosition = new Vector3(xPos, -4f, 0);
+
+            if (handCards[i].gameObject == SelectCard)
+            {
+                targetPosition.y += 0.5f;
+            }
+
             handCards[i].transform.position = Vector3.Lerp(handCards[i].transform.position, targetPosition, Time.deltaTime * 5f);
         }
     }
@@ -116,6 +122,8 @@ public class CardManager : MonoBehaviour
     public void RunCard(int x, int y)
     {
         if(cards[x, y] == null) return;
+        GameManager.gameManager.RunCards();
+
         GameManager.gameManager.AddRunActionToQueue(cards[x, y].Run);
 
         for (int i = 0; i < 3; i++)
@@ -123,7 +131,7 @@ public class CardManager : MonoBehaviour
             for (int j = 0; j < 3; j++)
             {
                 if(cards[i, j] == null) continue;
-                GameManager.gameManager.AddRunActionToQueue(() => cards[i, j].UpdateCard(cards[x, y]));
+                cards[i, j].UpdateCard(cards[x, y]);
             }
         }
     }
@@ -135,10 +143,11 @@ public class CardManager : MonoBehaviour
             Card cardScript = SelectCard.GetComponent<Card>();
 
             SetCard(slot, cardScript);
-            DeselectCard();
 
             Debug.Log($"보드 {slot.x}, {slot.y}에 배치 완료");
         }
+
+        DeselectCard();
     }
 
     public void SelectingCard(GameObject cardObject)
