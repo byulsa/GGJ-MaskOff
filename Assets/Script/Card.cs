@@ -6,10 +6,12 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     public int cost;
-    public int x;
-    public int y;
-    public Coin coin;
-    public Food food;
+    public int x = -1;
+    public int y = -1;
+    public int coin;
+    public int food;
+
+    public Place place;
 
     public List<IAct> acts = new List<IAct>();
     private readonly List<Type> actTypes = new List<Type>
@@ -55,13 +57,20 @@ public class Card : MonoBehaviour
 
     public void AddRunActionToQueue()
     {
-        GameManager.gameManager.runQueue.Add(Run);
+        GameManager.gameManager.AddRunActionToQueue(Run);
     }
 
     public void Select()
     {
-        Debug.Log($"선택됨{gameObject}");
-        GameManager.gameManager.SelectingCard(gameObject);
+        if (place == null)
+        {
+            Debug.Log($"선택됨{gameObject}");
+            CardManager.cardManager.SelectingCard(gameObject);
+            return;
+        }
+
+        Debug.Log($"실행됨{gameObject}");
+        CardManager.cardManager.RunCard(place.x, place.y);
     }
 
     public void AddAct(IAct newAct)

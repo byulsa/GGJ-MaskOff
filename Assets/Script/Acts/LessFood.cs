@@ -6,9 +6,9 @@ public class LessFood : MonoBehaviour, IAct
 
     public void Run(Card card)
     {
-        if (card.food != null && card.food.food >= amount)
+        if (card.food >= amount)
         {
-            card.food.food = Mathf.Max(0, card.food.food - amount);
+            card.food = Mathf.Max(0, card.food - amount);
             return;
         }
         GameManager.gameManager.Food = Mathf.Max(0, GameManager.gameManager.Food - amount);

@@ -6,9 +6,9 @@ public class LessCoin : MonoBehaviour, IAct
 
     public void Run(Card card)
     {
-        if (card.coin != null && card.coin.coin >= amount)
+        if (card.coin >= amount)
         {
-            card.coin.coin = Mathf.Max(0, card.coin.coin - amount);
+            card.coin = Mathf.Max(0, card.coin - amount);
             return;
         }
         GameManager.gameManager.Coin = Mathf.Max(0, GameManager.gameManager.Coin - amount);

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Shop : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Shop : MonoBehaviour
     [Header("UI 설정")]
     public List<GameObject> soldPanel;
     public Image[] SoldIcon;
+    public List<Text> CostText;
+
     public Sprite coinNormal;
     public Sprite coinWear;
 
@@ -23,10 +26,7 @@ public class Shop : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            HandleSelection();
-        }
+
     }
 
     public void RefreshStore()
@@ -40,7 +40,9 @@ public class Shop : MonoBehaviour
         foreach (GameObject card in SalesCard)
         {
             if (card != null && card.transform.parent == null) // 배정 안 된 카드만 삭제
+            {
                 Destroy(card);
+            }
         }
         SalesCard.Clear();
 
@@ -50,6 +52,7 @@ public class Shop : MonoBehaviour
             int randomIndex = Random.Range(0, CardPool.Count);
             GameObject newCard = Instantiate(CardPool[randomIndex], SpawnPoints[i].position, Quaternion.identity);
             
+            Card card = newCard.GetComponent<Card>();
             cardskin skin = newCard.GetComponent<cardskin>();
             SalesCard.Add(newCard);
 
@@ -57,35 +60,24 @@ public class Shop : MonoBehaviour
 
             // 마스크 여부에 따라 아이콘 설정
             if (skin.maskWear == MaskWear.Wear)
+            {
                 SoldIcon[i].sprite = coinWear;
+                CostText[i].text = card.coin.ToString();
+            }
             else
+            {
                 SoldIcon[i].sprite = coinNormal;
+                CostText[i].text = card.food.ToString();
+            }
         }
     }
 
-    void HandleSelection()
+    public bool IsShopCard(GameObject cardObj)
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-
-        if (hit.collider != null)
-        {
-            if (hit.collider.CompareTag("Card") && SalesCard.Contains(hit.collider.gameObject))
-            {
-                BuyCard(hit.collider.gameObject);
-            }
-            else if (hit.collider.CompareTag("Card") && !SalesCard.Contains(hit.collider.gameObject))
-            {
-                hit.collider.GetComponent<Card>().Select();
-            }
-            else if (hit.collider.CompareTag("Slot") && GameManager.gameManager.IsSelect)
-            {
-                TryPlaceCard(hit.collider.gameObject);
-            }
-        }
+        return SalesCard.Contains(cardObj);
     }
 
-    void BuyCard(GameObject cardObj)
+    public void BuyCard(GameObject cardObj)
     {
         int index = SalesCard.IndexOf(cardObj);
         if (index == -1 || soldPanel[index].activeSelf) return;
@@ -94,29 +86,21 @@ public class Shop : MonoBehaviour
         cardskin skin = cardObj.GetComponent<cardskin>();
 
         if (skin.maskWear == MaskWear.Wear)
-            GameManager.gameManager.Food -= card.cost;
+        {
+            if(GameManager.gameManager.Food < card.food) return;
+            GameManager.gameManager.Food -= card.food;
+        }
         else
-            GameManager.gameManager.Coin -= card.cost;
+        {
+            if(GameManager.gameManager.Coin < card.coin) return;
+            GameManager.gameManager.Coin -= card.coin;
+        }
 
-        cardObj.transform.position = new Vector3(0, -10, 0); 
+        CardManager.cardManager.AddCard(card);
+        // cardObj.transform.position = new Vector3(0, -10, 0); 
         soldPanel[index].SetActive(true);
+        SalesCard[index] = null; // 구매된 카드를 더 이상 판매하지 않도록 설정
         
         Debug.Log(cardObj.name + " 구매 완료. 인벤토리에 보관됨.");
-    }
-
-    void TryPlaceCard(GameObject slotObj)
-    {
-        Place targetPlace = slotObj.GetComponent<Place>();
-        if (targetPlace == null) return;
-        if (GameManager.gameManager.GetCard(targetPlace.x, targetPlace.y) == null)
-        {
-            GameObject selectedCard = GameManager.gameManager.SelectCard;
-            Card cardScript = selectedCard.GetComponent<Card>();
-            cardScript.x = targetPlace.x;
-            cardScript.y = targetPlace.y;
-            GameManager.gameManager.SetCard(targetPlace.x, targetPlace.y, cardScript);
-            selectedCard.transform.position = targetPlace.transform.position;
-            GameManager.gameManager.PlaceCard(); // 선택 해제
-        }
     }
 }

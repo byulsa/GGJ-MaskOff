@@ -467,63 +467,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &303827275
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 303827277}
-  - component: {fileID: 303827276}
-  m_Layer: 0
-  m_Name: CardManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &303827276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303827275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b470c0145c337f4fa1e8d5a67af2493, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CardManager
-  IsSelect: 0
-  handCards: []
-  SelectCard: {fileID: 0}
-  PlaceList:
-  - {fileID: 313566565}
-  - {fileID: 2143632354}
-  - {fileID: 555056441}
-  - {fileID: 684934939}
-  - {fileID: 1582721506}
-  - {fileID: 220882057}
-  - {fileID: 1682808924}
-  - {fileID: 1501949641}
-  - {fileID: 1508989905}
---- !u!4 &303827277
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303827275}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &313566561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,8 +1950,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a88c67937b8fd441883f9fcb0002c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  Coin: 500
-  Food: 500
+  IsSelect: 0
+  handCards: []
+  SelectCard: {fileID: 0}
+  PlaceList:
+  - {fileID: 313566565}
+  - {fileID: 2143632354}
+  - {fileID: 555056441}
+  - {fileID: 684934939}
+  - {fileID: 1582721506}
+  - {fileID: 220882057}
+  - {fileID: 1682808924}
+  - {fileID: 1501949641}
+  - {fileID: 1508989905}
+  Coin: 5
+  Food: 5
   currentPhase: 0
 --- !u!4 &1055318481
 Transform:
@@ -3136,10 +3092,6 @@ MonoBehaviour:
   - {fileID: 1808000273}
   - {fileID: 2029147572}
   - {fileID: 205694548}
-  CostText:
-  - {fileID: 1915399473}
-  - {fileID: 1199825644}
-  - {fileID: 1379601722}
   coinNormal: {fileID: 21300000, guid: 16372eab6e0208a46b7d0072b45db4ce, type: 3}
   coinWear: {fileID: 21300000, guid: 60839e8e88d07f1489b9dc3c258d3f3c, type: 3}
 --- !u!1 &1508989901
@@ -4199,4 +4151,3 @@ SceneRoots:
   - {fileID: 1055318481}
   - {fileID: 1454288337}
   - {fileID: 362976990}
-  - {fileID: 303827277}

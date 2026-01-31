@@ -6,7 +6,7 @@ public class SetCardUp : MonoBehaviour, IAct
 
     public void Run(Card card)
     {
-        targetCard.card = GameManager.gameManager.GetCard(card.x, card.y - 1);
+        targetCard.card = CardManager.cardManager.GetCard(card.x, card.y - 1);
     }
 
     public void UpdateCard(Card changedCard)

@@ -643,8 +643,6 @@ GameObject:
   - component: {fileID: 2115811476982095567}
   - component: {fileID: 7932483212626114118}
   - component: {fileID: 7425746171512826565}
-  - component: {fileID: 5956803358440317093}
-  - component: {fileID: 39812558858311700}
   - component: {fileID: 6614977621847553779}
   - component: {fileID: 6368259463015411489}
   m_Layer: 6
@@ -751,8 +749,9 @@ MonoBehaviour:
   cost: 1
   x: 0
   y: 0
-  coin: {fileID: 5956803358440317093}
-  food: {fileID: 39812558858311700}
+  coin: 500
+  food: 500
+  place: {fileID: 0}
 --- !u!114 &7932483212626114118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,32 +849,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.8, y: 1.2}
   m_EdgeRadius: 0
---- !u!114 &5956803358440317093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7532726912818284000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a2e64b9f829efc4aa0cf68a657f6b4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Coin
-  coin: 0
---- !u!114 &39812558858311700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7532726912818284000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0f80017f2ae0654bae6aad11e8084e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Food
-  food: 0
 --- !u!114 &6614977621847553779
 MonoBehaviour:
   m_ObjectHideFlags: 0

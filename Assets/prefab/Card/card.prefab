@@ -747,6 +747,9 @@ MonoBehaviour:
   cost: 0
   x: 0
   y: 0
+  coin: 100
+  food: 100
+  place: {fileID: 0}
 --- !u!114 &7932483212626114118
 MonoBehaviour:
   m_ObjectHideFlags: 0

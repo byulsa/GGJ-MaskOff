@@ -11,11 +11,11 @@ public class LinkToss : MonoBehaviour, IAct
             return;
         }
 
-        targetCard.card.coin.coin += card.coin.coin;
-        targetCard.card.food.food += card.food.food;
+        targetCard.card.coin += card.coin;
+        targetCard.card.food += card.food;
 
-        card.coin.coin = 0;
-        card.food.food = 0;
+        card.coin = 0;
+        card.food = 0;
     }
 
     public void UpdateCard(Card changedCard)

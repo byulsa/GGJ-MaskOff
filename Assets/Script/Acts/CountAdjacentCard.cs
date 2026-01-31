@@ -11,7 +11,7 @@ public class CountAdjacentCard : MonoBehaviour, IAct
 
         for (int i = 0; i < 4; i++)
         {
-            Card adjacentCard = GameManager.gameManager.GetCard(card.x + xx[i], card.y + yy[i]);
+            Card adjacentCard = CardManager.cardManager.GetCard(card.x + xx[i], card.y + yy[i]);
 
             if (adjacentCard != null)
             {
