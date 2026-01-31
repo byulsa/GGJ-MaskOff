@@ -17,6 +17,13 @@ public class Card : MonoBehaviour
     private readonly List<Type> actTypes = new List<Type>
     {
         typeof(TargetAmount),
+
+        typeof(SetCardNearby),
+        typeof(DetectAdjacentCard),
+        typeof(DetectNRowCard),
+        typeof(CountMyCostCard),
+        typeof(CountNCostCard),
+        typeof(CountTargetCardCost),
         typeof(CountAdjacentCard),
         typeof(LessCoin),
         typeof(LessFood),
@@ -24,7 +31,8 @@ public class Card : MonoBehaviour
         typeof(LinkCoin),
         typeof(EarnFood),
         typeof(EarnCoin),
-        typeof(WhileCostDone)
+        typeof(WhileCostDone),
+        typeof(RunAdjacentCard)
     };
 
     private void Awake()

@@ -90,6 +90,22 @@ public class CardManager : MonoBehaviour
         return cards[x, y];
     }
 
+    public List<Card> GetAllCardsOnBoard()
+    {
+        List<Card> cardList = new List<Card>();
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if (cards[i, j] != null)
+                {
+                    cardList.Add(cards[i, j]);
+                }
+            }
+        }
+        return cardList;
+    }
+
     public void SetCard(Place place, Card card)
     {
         int x = place.x;
