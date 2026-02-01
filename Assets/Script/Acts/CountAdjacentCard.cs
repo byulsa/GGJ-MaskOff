@@ -4,7 +4,7 @@ public class CountAdjacentCard : MonoBehaviour, IAct
 {
     public TargetAmount targetAmount;
 
-    public void Run(Card card)
+    public bool Run(Card card)
     {
         int[] xx = { -1, 1, 0, 0 };
         int[] yy = { 0, 0, -1, 1 };
@@ -18,6 +18,8 @@ public class CountAdjacentCard : MonoBehaviour, IAct
                 targetAmount.amount++;
             }
         }
+
+        return true;
     }
 
     public void UpdateCard(Card changedCard)

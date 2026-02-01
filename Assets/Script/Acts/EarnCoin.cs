@@ -4,11 +4,14 @@ public class EarnCoin : MonoBehaviour, IAct
 {
     public int amount;
 
-    public void Run(Card card)
+    public bool Run(Card card)
     {
-        GameManager.gameManager.Coin += amount;
-    }
+        Debug.Log("EarnCoin Act Triggered: +" + amount + " coins");
+        // GameManager.gameManager.Coin += amount;
+        card.coin += amount;
 
+        return true; 
+    }
     public void UpdateCard(Card changedCard)
     {
         // Do nothing

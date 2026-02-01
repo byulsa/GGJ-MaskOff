@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6832565218954217206
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 263655211458676956, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1526605387, guid: 474a8d948066bc04f8906a142498cb1c, type: 3}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043849544186125219, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: coin
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: cost
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: cardName
+      value: "\uAE30\uC790"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: cardDescription
+      value: "\uAC19\uC740 \uCF54\uC2A4\uD2B8\n\uCE74\uB4DC \uAC1C\uC218\uB9CC\uD07C\n\uC74C\uC2DD
+        \uD68D\uB4DD"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306095992298133110, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317464614458231619, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 772516502, guid: 96146f3090937e14b818bfe02ec36b33, type: 3}
+    - target: {fileID: 5454605234108452988, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -599690506, guid: 526381845000d7945a5e825f337180eb, type: 3}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -929068557, guid: f74a11ad109dfb942abb16fa45e0ad2f, type: 3}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236107884758499642, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Text
+      value: "\uAC19\uC740 \uCF54\uC2A4\uD2B8\n\uCE74\uB4DC \uAC1C\uC218\uB9CC\uD07C\n\uC74C\uC2DD
+        \uD68D\uB4DD"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Name
+      value: SameCostToFoodCard
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8174991070726887792}
+    - targetCorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4564063190941581624}
+    - targetCorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8164419501886089656}
+  m_SourcePrefab: {fileID: 100100000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+--- !u!1 &3916929815801463574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+  m_PrefabInstance: {fileID: 6832565218954217206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8174991070726887792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916929815801463574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468f5baeaae50ee4f81ab31e008622c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CountMyCostCard
+  targetAmount: {fileID: 4564063190941581624}
+--- !u!114 &4564063190941581624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916929815801463574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5102cea65431d264c9d1b1721cd1f04b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetAmount
+  amount: 0
+--- !u!114 &8164419501886089656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916929815801463574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e725e00d9a16d947a8ca94068b69c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LinkFood
+  targetAmount: {fileID: 4564063190941581624}

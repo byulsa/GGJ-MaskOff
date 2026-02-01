@@ -16,6 +16,7 @@ public class cardskin : MonoBehaviour
     public SpriteRenderer Mask;
     public SpriteRenderer Hair;
     public GameObject BackHair;
+    public TextMesh explanationText;
 
     [Header("스킨리스트")]
     public List<Sprite> EyesList;
@@ -26,7 +27,34 @@ public class cardskin : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        if(Random.Range(0, 2) == 1)
+
+        //Ran();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // if (Input.GetKeyDown(KeyCode.R))
+        // {
+        //     Ran();
+        // }
+        //explanationText.sortingOrder = 10;
+    }
+    void Ran()
+    {
+        Eyes.sprite = EyesList[Random.Range(0, EyesList.Count)];
+        Face.sprite = FaceList[Random.Range(0, FaceList.Count)];
+        clothes.sprite = ClothesList[Random.Range(0, ClothesList.Count)];
+        Hair.sprite = HairList[Random.Range(0, HairList.Count)];
+        if (Hair.sprite == HairList[3])
+        {
+            BackHair.SetActive(true);
+        }
+        else
+        {
+            BackHair.SetActive(false);
+        }
+        if (Random.Range(0, 2) == 1)
         {
             maskWear = MaskWear.Wear;
             Mask.sprite = MaskList[Random.Range(0, MaskList.Count)];
@@ -36,31 +64,6 @@ public class cardskin : MonoBehaviour
             maskWear = MaskWear.None;
             Mask.sprite = null;
         }
-        Ran();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Ran();
-        }
-    }
-    void Ran()
-    {
-        Eyes.sprite = EyesList[Random.Range(0, EyesList.Count)];
-        Face.sprite = FaceList[Random.Range(0, FaceList.Count)];
-        clothes.sprite = ClothesList[Random.Range(0, ClothesList.Count)];
-        Hair.sprite = HairList[Random.Range(0, HairList.Count)];
-        if(Hair.sprite == HairList[3])
-        {
-            BackHair.SetActive(true);
-        }
-        else
-        {
-            BackHair.SetActive(false);
-        }
-        
     }
 }

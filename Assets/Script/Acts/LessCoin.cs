@@ -4,14 +4,19 @@ public class LessCoin : MonoBehaviour, IAct
 {
     public int amount;
 
-    public void Run(Card card)
+    public bool Run(Card card)
     {
         if (card.coin >= amount)
         {
-            card.coin = Mathf.Max(0, card.coin - amount);
-            return;
+            card.coin -= amount;
+            return true;
         }
-        GameManager.gameManager.Coin = Mathf.Max(0, GameManager.gameManager.Coin - amount);
+        if (GameManager.gameManager.Coin >= amount)
+        {
+            GameManager.gameManager.Coin -= amount;
+            return true;
+        }
+        return false; // 부족할 때만 false
     }
 
     public void UpdateCard(Card changedCard)

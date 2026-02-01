@@ -5,7 +5,7 @@ public class CountNCostCard : MonoBehaviour, IAct
     public TargetAmount targetAmount;
     public int costN;
 
-    public void Run(Card card)
+    public bool Run(Card card)
     {
         foreach (Card c in CardManager.cardManager.GetAllCardsOnBoard())
         {
@@ -14,6 +14,8 @@ public class CountNCostCard : MonoBehaviour, IAct
                 targetAmount.amount++;
             }
         }
+
+        return true;
     }
 
     public void UpdateCard(Card changedCard)

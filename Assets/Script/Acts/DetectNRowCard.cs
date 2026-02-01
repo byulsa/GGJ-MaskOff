@@ -6,16 +6,17 @@ public class DetectNRowCard : MonoBehaviour, IAct
 
     Card card;
 
-    public void Run(Card card)
+    public void Awake()
     {
-        this.card = card;
+        card = GetComponent<Card>();
     }
 
     public void UpdateCard(Card changedCard)
     {
         if (changedCard.y == row)
         {
-            GameManager.gameManager.AddRunActionToQueue(card.Run);
+            Debug.Log("N Row card detected");
+            card.AddRunActionToQueue();
         }
     }
 }

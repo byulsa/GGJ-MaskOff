@@ -1,5 +1,6 @@
 public interface IAct
 {
-    void Run(Card card);
+    bool Run(Card card) => true;
     void UpdateCard(Card changedCard); // Detect Card
+    void Adjustment(Card card) { }
 }

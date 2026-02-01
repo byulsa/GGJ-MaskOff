@@ -4,14 +4,19 @@ public class LessFood : MonoBehaviour, IAct
 {
     public int amount;
 
-    public void Run(Card card)
+    public bool Run(Card card)
     {
         if (card.food >= amount)
         {
-            card.food = Mathf.Max(0, card.food - amount);
-            return;
+            card.food -= amount;
+            return true;
         }
-        GameManager.gameManager.Food = Mathf.Max(0, GameManager.gameManager.Food - amount);
+        if (GameManager.gameManager.Food >= amount)
+        {
+            GameManager.gameManager.Food -= amount;
+            return true;
+        }
+        return false;
     }
 
     public void UpdateCard(Card changedCard)

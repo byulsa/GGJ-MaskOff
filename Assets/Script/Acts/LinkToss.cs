@@ -4,11 +4,11 @@ public class LinkToss : MonoBehaviour, IAct
 {
     public TargetCard targetCard;
 
-    public void Run(Card card)
+    public bool Run(Card card)
     {
         if (targetCard.card == null)
         {
-            return;
+            return false;
         }
 
         targetCard.card.coin += card.coin;
@@ -16,6 +16,8 @@ public class LinkToss : MonoBehaviour, IAct
 
         card.coin = 0;
         card.food = 0;
+
+        return true;
     }
 
     public void UpdateCard(Card changedCard)

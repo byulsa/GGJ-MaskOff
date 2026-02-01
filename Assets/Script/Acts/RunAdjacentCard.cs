@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RunAdjacentCard : MonoBehaviour, IAct
 {
-    public void Run(Card card)
+    public bool Run(Card card)
     {
         int[] xx = { -1, 1, 0, 0 };
         int[] yy = { 0, 0, -1, 1 };
@@ -13,9 +13,11 @@ public class RunAdjacentCard : MonoBehaviour, IAct
 
             if (adjacentCard != null)
             {
-                GameManager.gameManager.AddRunActionToQueue(adjacentCard.Run);
+                adjacentCard.AddRunActionToQueue();
             }
         }
+
+        return true;
     }
 
     public void UpdateCard(Card changedCard)

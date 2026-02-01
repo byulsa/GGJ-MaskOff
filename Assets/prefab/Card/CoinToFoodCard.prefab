@@ -49,12 +49,80 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: coin
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
       propertyPath: cost
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: cardName
+      value: "\uC2A4\uB2D8"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: cardDescription
+      value: "\uB3D9\uC804 1\uAC1C \uC18C\uBAA8, \uC2DD\uB7C9 2\uAC1C \uD68D\uB4DD"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027644317550181154, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2771
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317464614458231619, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2517195831628879061, guid: 96146f3090937e14b818bfe02ec36b33, type: 3}
+    - target: {fileID: 5454605234108452988, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -939389065, guid: 526381845000d7945a5e825f337180eb, type: 3}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7314122582464894833, guid: f74a11ad109dfb942abb16fa45e0ad2f, type: 3}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236107884758499642, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Text
+      value: "\uB3D9\uC804 1\uAC1C \uC18C\uBAA8, \n\uC2DD\uB7C9 2\uAC1C \uD68D\uB4DD"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7425746171512826565, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7425746171512826565, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
       propertyPath: m_Name
       value: CoinToFoodCard
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013737726894654904, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013737726894654904, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013737726894654904, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8637449312072984018, guid: bb2c514dcc21dd8409dc4eb9def278a5, type: 3}
+    - target: {fileID: 9013737726894654904, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

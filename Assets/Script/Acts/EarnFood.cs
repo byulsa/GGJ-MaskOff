@@ -4,9 +4,11 @@ public class EarnFood : MonoBehaviour, IAct
 {
     public int amount;
 
-    public void Run(Card card)
+    public bool Run(Card card)
     {
-        GameManager.gameManager.Food += amount;
+        // GameManager.gameManager.Food += amount;
+        card.food += amount;
+        return true;
     }
 
     public void UpdateCard(Card changedCard)

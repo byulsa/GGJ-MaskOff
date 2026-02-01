@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6832565218954217206
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043849544186125219, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: cost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: food
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: cardName
+      value: "\uAC00\uBA74"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: unitType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: maskDescription
+      value: "\uC5BB\uC740 \uC790\uC6D0\uC744 \uC704\uCABD \uC778\uBB3C \uCE74\uB4DC\uB85C
+        \uC804\uB2EC"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306095992298133110, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770391225921722183, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5729988571801133443, guid: bd5a2cf60f8d09b4abca52e8f9f036b7, type: 3}
+    - target: {fileID: 3770391225921722183, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317464614458231619, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7104653133866990232, guid: 96146f3090937e14b818bfe02ec36b33, type: 3}
+    - target: {fileID: 5454605234108452988, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7517233417376069086, guid: 526381845000d7945a5e825f337180eb, type: 3}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236107884758499642, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Text
+      value: "\uC5BB\uC740 \uC790\uC6D0\uC744\n\uC704\uCABD \uC778\uBB3C \uCE74\uB4DC\n\uB85C
+        \uC804\uB2EC"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Name
+      value: TossUpMaskCard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932483212626114118, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: maskWear
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932483212626114118, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: explanationText
+      value: 
+      objectReference: {fileID: 4231681699800123340}
+    - target: {fileID: 8728798729754191956, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7069194538485040822}
+    - targetCorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7915347339312164275}
+    - targetCorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5844526419025167789}
+  m_SourcePrefab: {fileID: 100100000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+--- !u!1 &3916929815801463574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+  m_PrefabInstance: {fileID: 6832565218954217206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7069194538485040822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916929815801463574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a568a1ca262733429451236af2f06db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LinkToss
+  targetCard: {fileID: 7915347339312164275}
+--- !u!114 &7915347339312164275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916929815801463574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855ea5485a0fa93448edd55193c26cb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TargetCard
+  card: {fileID: 0}
+--- !u!114 &5844526419025167789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916929815801463574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c5c2173a07ae98408a9b17b3fca7bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SetCardNearby
+  offset: {x: 0, y: 1}
+  targetCard: {fileID: 7915347339312164275}
+--- !u!102 &4231681699800123340 stripped
+TextMesh:
+  m_CorrespondingSourceObject: {fileID: 7236107884758499642, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+  m_PrefabInstance: {fileID: 6832565218954217206}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6832565218954217206
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 263655211458676956, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -451601225, guid: 474a8d948066bc04f8906a142498cb1c, type: 3}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 809148932964155602, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043849544186125219, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: coin
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: cost
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: cardName
+      value: "\uB09A\uC2DC\uAFBC"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115811476982095567, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: cardDescription
+      value: "\uC2DD\uB7C9 8\uAC1C \uC18C\uBAA8, \uBB3C 1\uAC1C \uD68D\uB4DD"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306095992298133110, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317464614458231619, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2232999317935964130, guid: 96146f3090937e14b818bfe02ec36b33, type: 3}
+    - target: {fileID: 5454605234108452988, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7758941277263640075, guid: 526381845000d7945a5e825f337180eb, type: 3}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252030616797316928, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7236107884758499642, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Text
+      value: "\uC2DD\uB7C9 8\uAC1C \uC18C\uBAA8,\n\uBB3C 1\uAC1C \uD68D\uB4DD"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      propertyPath: m_Name
+      value: FoodToWaterCard
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8996402852829504122}
+    - targetCorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3450437038982334968}
+  m_SourcePrefab: {fileID: 100100000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+--- !u!1 &3916929815801463574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7532726912818284000, guid: b162296806a263e498db6d069fe7a44d, type: 3}
+  m_PrefabInstance: {fileID: 6832565218954217206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8996402852829504122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916929815801463574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9dea0f1b4a8e884ebe7c285db8e3526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LessFood
+  amount: 8
+--- !u!114 &3450437038982334968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3916929815801463574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de992c0ef34ccd0489fbf4362ade20f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EarnWater
+  amount: 1

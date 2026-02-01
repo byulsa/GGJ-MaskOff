@@ -4,9 +4,9 @@ public class DetectAdjacentCard : MonoBehaviour, IAct
 {
     Card card;
 
-    public void Run(Card card)
+    public void Awake()
     {
-        this.card = card;
+        card = GetComponent<Card>();
     }
 
     public void UpdateCard(Card changedCard)
@@ -18,7 +18,8 @@ public class DetectAdjacentCard : MonoBehaviour, IAct
         {
             if (changedCard.x == card.x + xx[i] && changedCard.y == card.y + yy[i])
             {
-                GameManager.gameManager.AddRunActionToQueue(card.Run);
+                Debug.Log("Adjacent card detected");
+                card.AddRunActionToQueue();
                 return;
             }
         }

@@ -2,12 +2,17 @@ using UnityEngine;
 
 public class WhileCostDone : MonoBehaviour, IAct
 {
-    public void Run(Card card)
+    public bool Run(Card card)
     {
         if (card.cost > 0)
         {
-            GameManager.gameManager.AddRunActionToQueue(card.Run);
+            Debug.Log("WhileCostDone Act Triggered");
+            card.AddRunActionToQueue();
+
+            return true;
         }
+
+        return false;
     }
 
     public void UpdateCard(Card changedCard)
